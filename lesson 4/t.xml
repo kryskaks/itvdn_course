@@ -1,0 +1,31 @@
+
+<ValCurs Date="14.07.2018" name="Foreign Currency Market">
+	<Valute ID="R01010">
+		<NumCode>036</NumCode>
+		<CharCode>AUD</CharCode>
+		<Nominal>1</Nominal>
+		<Name>Австралийский доллар</Name>
+		<Value>46,7002</Value>
+	</Valute>
+	
+	<Valute ID="R01020A">
+		<NumCode>944</NumCode>
+		<CharCode>AZN</CharCode>
+		<Nominal>1</Nominal>
+		<Name>Азербайджанский манат</Name>
+		<Value>37,1551</Value>
+	</Valute>
+	
+	<Valute ID="R01235">
+		<NumCode>840</NumCode>
+		<CharCode>USD</CharCode>
+		<Nominal>1</Nominal>
+		<Name>Доллар США</Name>
+		<Value>63,2194</Value>
+	</Valute>
+</ValCurs>
+
+
+
+
+
