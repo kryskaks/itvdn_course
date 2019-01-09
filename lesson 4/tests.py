@@ -30,3 +30,7 @@ class Test(unittest.TestCase):
 
         self.assertGreater(xrate.rate, 25)
         self.assertGreater(updated_after, updated_before)
+
+
+if __name__ == '__main__':
+    unittest.main()
