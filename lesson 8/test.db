@@ -1,0 +1,44 @@
+def mask(data):
+    data_len = len(data)
+    if data_len in (0, 1, 2):
+        return "*" * len(data)
+
+    masked = data[0] + "*" * (data_len - 2) + data[-1]
+    return masked
+
+
+print(mask(""))
+print(mask("1"))
+print(mask("12"))
+print(mask("123"))
+print(mask("1234"))
+print(mask("1234567"))
+
+
+
+# @app.route("/hello/<name>")
+# def hello_name(name):
+#     return f"Hello {name}!"
+
+
+# @app.route("/hello/<int:user_id>")
+# def hello_user_id(user_id):
+#     return f"Hello {user_id}!"
+
+
+# @app.route("/hello/<float:height>")
+# def hello_height(height):
+#     return f"Hello user with {height}!"
+
+
+# @app.route('/path/<path:subpath>')
+# def show_subpath(subpath):
+#     # show the subpath after /path/
+#     return 'Subpath %s' % subpath
+
+
+# @app.route('/api/xrates/<fmt>')
+# def api_rates(fmt):
+#     return f"Rates with format {fmt}"
+
+
