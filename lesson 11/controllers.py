@@ -83,5 +83,5 @@ class UpdateRates(BaseController):
 class ViewLogs(BaseController):
     def _call(self):
         page = int(self.request.args.get("page", 1))
-        logs = ApiLog.select().paginate(page, 10).order_by(ApiLog.id)
+        logs = ApiLog.select().paginate(page, 10).order_by(ApiLog.id.desc())
         return render_template("logs.html", logs=logs)

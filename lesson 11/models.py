@@ -42,8 +42,7 @@ class ApiLog(_Model):
     error = TextField(null=True)
 
     def json(self):
-        data = self._data
-        data.pop("response_text")
+        data = self.__data__
         return data
 
 
